@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from django.shortcuts import render,redirect
 from .models import Product
 from .form import ProductForm
@@ -52,10 +51,8 @@ def delete(request,pk):
     listing = Product.objects.get(id=pk)
     delete()
     return redirect("/")
-=======
 from django.shortcuts import render
 
 # Create your views here.
 def index(request):
     return render(request,"home/index.html")
->>>>>>> origin/main
